@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Timer</title>
+</head>
+<body>
+  <header></header>
+  <div class="tabs">
+    <div class="tab active" onclick="openTab('chrono')">Chronomètre</div>
+    <div class="tab" onclick="openTab('timer')">Minuterie</div>
+    <div class="tab" onclick="openTab('date')">Heure et date</div>
+  </div>
+  <section id="section-1"></section>
+    <div id="chrono" class="tab-content active">
+      <h2>Chronomètre</h2>
+      
+      <div class="box">
+          
+          <span id="myChrono">0</span>
+      
+          <div>
+              <button type="button" onclick="startChrono()">Depart</button>
+              <button type="button"onclick="stopChrono()">Arret</button>
+          </div>
+          
+      </div>
+    </div>
+  </section>
+  <div id="timer" class="tab-content">
+    <h2>Minuterie</h2>
+    <div class="box">
+      <span id="time-remaining"></span>
+      <input id="set-number" type="number" value="10">
+      <button onclick="startCountdown()">Démarrer</button>
+    </div>    
+  </div>
+
+  <div id="date" class="tab-content">
+    <h2>Heure et date</h2>
+    <div class="box">
+      <script type="text/JavaScript">
+          var myhour = setInterval(
+              function(){ 
+                  displayCurrentTime()
+              }, 1000
+          );
+          var myDate = setInterval(
+              function(){ 
+                  displayCurrentDate()
+              }, 1000
+          );
+
+      </script>
+      <div class="date-hours">
+        <span id="current-date"></span>
+        <span id="current-hour"></span>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p id="contact">contact: <a href="mailto:beric3069@gmail.com">Me contacter</a></p>
+  </footer>
+  <script>
+    function openTab(tabId) {
+      // Enlever la classe active de tous les onglets
+      document.querySelectorAll('.tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      // Enlever la classe active de tous les contenus
+      document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+      });
+      // Ajouter la classe active à l'onglet cliqué
+      event.target.classList.add('active');
+      // Afficher le contenu correspondant
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

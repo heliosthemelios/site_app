@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: rgb(6, 14, 36);
+    border-bottom: orange;
+}
+
+header{   
+    
+    background-image: url('../../assets/baniere.png');
+    background-color: orange;
+    background-size: cover; /* Assure que l'image couvre toute la section */
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    border-bottom: 3px solid rgb(240, 142, 14);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+}
+#section-1{
+    
+    background: rgb(8, 8, 105);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    
+   
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid orange;
+}
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid rgb(240, 142, 14);
+    border-bottom: none;
+    margin-right: 5px;
+    background-color:  rgb(240, 142, 14);
+}
+.tab.active {
+    background-color: yellow;
+    font-weight: bold;
+}
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid rgb(8, 8, 105) ;
+}
+.tab-content.active {
+    display: block;
+}
+h2{
+    text-align: center;
+}
+.box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 142, 14);
+    
+    
+    height: 600px;
+    border: 3px solid black; 
+}
+button{
+    color: orange;
+    font-size: 30px;
+    border-radius: 5px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: rgb(8, 8, 105);
+}
+input{
+    color: aliceblue;
+    width: 140px;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 3px;
+    background-color: chocolate;
+   
+}
+.date-hours {
+    color: black;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+    
+}
+span{
+    font-size: 30px;
+    color: rgb(231, 231, 231);
+    margin: 50px;
+    
+}
+
+footer{
+    
+    background-color: rgb(6, 49, 96);
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    justify-content: right;
+    border-top: 5px solid orange;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
