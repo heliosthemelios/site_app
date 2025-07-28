@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Superbe jeu de bonhomme pendu avec noms d'animaux en français sans téléchargement et sans inscription" />
+        <meta name="keywords" content="jeu, bonhomme, animaux, français, programmation, javascript" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Bonhomme Pendu: Nom d'animaux en français</title>
+    </head>
+    <body>
+       <header></header>
+        <div class="jeu-contenant">
+            <h1>Bonhomme pendu: Nom d'animaux</h1>
+            <p>"Découvrez notre jeu du Bonhomme Pendu avec des noms d'animaux en français. Amusez-vous à deviner et apprendre tout en jouant!"</p>
+            <svg width="200" height="250" class="figure-contenant">
+                
+                <!--Suport-->
+                <line x1="60" y1="20" x2="140" y2="20"/>
+                <line x1="140" y1="20" x2="140" y2="50"/>
+                <line x1="60" y1="20" x2="60" y2="230"/>
+                <line x1="20" y1="230" x2="100" y2="230"/>
+
+                <!--Bonhomme-->
+
+                <!--Tete-->
+                <circle cx="140" cy="70" r="20" class="figure-partie"/>
+                <!--Corps-->
+                <line x1="140" y1="90" x2="140" y2="150" class="figure-partie"/>
+                <!-- bras-->
+                <line x1="140" y1="110" x2="110" y2="140" class="figure-partie" />
+                <line x1="140" y1="110" x2="170" y2="140" class="figure-partie" />
+                <!--jambe-->
+                <line x1="140" y1="150" x2="170" y2="190" class="figure-partie" />
+                <line x1="140" y1="150" x2="110" y2="190" class="figure-partie" />
+            </svg>
+
+            <div class="mauvaises-lettres-contenant">
+                <p>Mauvaises lettres</p>
+                <div id="mauvaises-lettres"></div>
+            </div>
+            <div class="mot" id="mot"></div>
+            </div>
+        </div>
+        <!--Contenant pour le message final-->
+        <div class="popup-contenant" id="popup-contenant">
+            <div class="popup">
+                <h2 id="message-final">Bravo ! tu as gagne !</h2>
+                <button id="play-bouton">Rejouer !</button>
+            </div>
+
+        </div>
+
+        <!--Notification-->
+        <div class="notification-contenant" id="notification-contenant">
+            <p>Vous avez deja essayer cette lettre...</p>
+
+        </div>
+        <footer>
+            <p id="contact">contact: <a href="mailto:admin@currently-offline.game">Me contacter</a></p>
+          </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

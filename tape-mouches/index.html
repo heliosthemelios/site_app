@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Jeu de tape les mouches en ligne et gratuit</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Petit jeu amusant et drle de tue mouche" />
+        <meta name="keywords" content="jeu, mouche, drole, programmation, javascript" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gruppo&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+<body>
+    <header></header>
+    <section class="section-1">
+        <div id="presentation-jeu" style="width: 600px;">
+
+            <h1>Jeu de tape les mouches</h1>
+
+            <h2>Bienvenue dans le monde degente du jeu de tue-mouches avec 
+                une tapette à mouches</h2>
+            <p> Préparez-vous à une aventure folle
+                et hilarante où vous serez confronté à des défis de plus en 
+                plus fous dans trois niveaux de difficulté : Facile, Corsé et 
+                Infernal ! Dans le niveau Facile, vous serez plongé dans un 
+                environnement vert pâle plein de surprises. 30 mouches audacieuses 
+                se promènent tranquillement, vous invitant à les chasser avec votre 
+                tapette à mouches. Elles sont un peu taquines, mais vous avez le temps 
+                de prendre votre élan et de leur donner une bonne claque !
+                Préparez-vous à des éclats de rire et à une satisfaction 
+                garantie lorsque vous les attraperez !</p>
+            <p>Mais n'ayez pas peur, car dans le niveau Corsé, les choses 
+                deviennent vraiment intéressantes ! Les mouches ont décidé 
+                d'augmenter leur vitesse et leur espièglerie. Elles volent à 
+                toute allure et vous devrez faire preuve de réflexes fulgurants 
+                pour les écraser avant qu'elles ne vous échappent. Ce niveau va 
+                mettre vos talents de chasseur de mouches à rude épreuve, mais 
+                l'excitation et l'adrénaline seront à leur comble !</p>
+            <p>Si vous pensez être un véritable maître de la tapette à mouches, 
+                alors préparez-vous pour le niveau Infernal ! Les mouches sont plus 
+                petites et encore plus rapides, rendant la tâche de les attraper encore 
+                plus délicate. Elles se faufileront entre vos doigts et vous défieront 
+                à chaque instant. Ce niveau vous fera rire aux éclats tout en testant 
+                vos compétences de manière épique ! Et n'oublions pas l'ambiance sonore ! 
+                Le jeu sera accompagné d'une musique entraînante et de nombreux effets 
+                sonores hilarants. Chaque mouche écrasée sera accompagnée d'un bruit 
+                comique qui vous fera craquer de rire à chaque fois. Vous serez totalement
+                immergé dans cet univers farfelu et vous ne pourrez plus vous en passer !</p>
+            <p><strong>Alors, êtes-vous prêt à relever le défi de notre jeu de tue-mouches avec 
+                une tapette à mouches ? Rejoignez-nous dans cette aventure amusante et 
+                passionnante où vous découvrirez que l'écrasement de mouches peut être à 
+                la fois un passe-temps hilarant et un véritable défi. Attrapez-les toutes, 
+                riez à gorge déployée et devenez le champion incontesté de la chasse aux mouches !</strong></p>
+        </div>       
+        <div id="start-container">
+            <button id="difficulte1" onclick="niveauFacile()">facile</button>
+            <button id="difficulte2" onclick="augmenterVitesseMouches()">corser</button>
+            <button id="difficulte3" onclick="augmenterVitesseGrosseur()">infernal</button>
+            <button id="startButton">Démarrer</button>
+        </div>
+        
+        <div class="container-jeu">
+                
+            <canvas id="jeuCanvas" class="hidden" width="600" height="450"></canvas>
+            <h2 id="gameOverMessage" class="game-over">Game Over !!!!!</h2>
+            <button id="reloadButton" class="game-over">Rejouer</button>
+            <h2 id="partieGagnerMessage" class="partie-gagnerId">Bravo! tu as gagner !</h2>
+            <button id="reloadButtonGagner" class="partie-gagnerId">Rejouer</button>
+            
+            <audio id="tape-mouche" src="sounds/taper_mouches.wav"></audio>
+            <audio id="musique-jeu" src="sounds/musique.mp3"></audio>
+            <audio id="game-overPerdu" src="sounds/gameOver.mp3"></audio>
+            <audio id="winner" src="sounds/winner.mp3"></audio>
+            <audio id="grandeTapette" src="sounds/grandeTapette.wav"></audio>
+        </div>
+
+        <div id="timer-container" width="200" height="40">
+            <canvas id="timerCanvas"></canvas>
+        </div>
+    </section>
+    <footer>
+        <p id="contact">contact: <a href="mailto:admin@currently-offline.game">Me contacter</a></p>
+    </footer>
+    <script src="scripts/constancesEtVariables.js"></script>
+    <script src="scripts/difficulterBoutons.js"></script>
+    <script src="scripts/commencerPartie.js"></script>
+    <script src="scripts/tapetteManager.js"></script>
+    <script src="scripts/jeu.js"></script>
+    <script src="scripts/gagnerPartie.js"></script>
+    <script src="scripts/gameOver.js"></script>
+    <script src="scripts/timerEvenement.js"></script>
+</body>
+</html>

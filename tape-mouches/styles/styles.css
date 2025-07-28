@@ -1,0 +1,213 @@
+/*
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Gruppo', sans-serif;
+*/
+
+body{
+  color: #abef93;
+  background: rgb(6, 14, 36);
+  
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+header{   
+    
+  background-image: url('../../assets/baniere.png');
+  background-color: orange;
+  background-size: cover; /* Assure que l'image couvre toute la section */
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width:100%;
+  display: flex;
+  border-bottom: 3px solid rgb(240, 142, 14);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  
+}
+.section-1{ 
+background-color: rgb(8, 8, 105);
+width: 100%;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+margin-bottom: 60px;
+border-bottom: 5px solid orange;
+border-radius:0 0 25px 25px;
+padding-top: 60px;
+
+}
+h1 {
+  color: #eec408;
+  font-family: 'Fredericka the Great', cursive;
+  user-select: none;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 10px 10px 10px black;
+  margin-top: 30px;
+  user-select: none;
+}
+
+h2{
+  user-select: none;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  margin-top: 30px;
+}
+
+p {
+  font-family: 'Gruppo', sans-serif;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.instructions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-jeu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timer-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  left: 37%;
+}
+
+
+
+.game-over {
+  background-color: rgb(166, 5, 5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+}
+
+.partie-gagnerId {
+  
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  display: none;
+  background-color: #8ef606;
+}
+
+#jeuCanvas{
+  border: 5px dotted pink;
+  
+}
+
+.hidden{
+  display: none;
+}
+
+#start-container{
+  
+  
+  background-color: bisque;
+  width: 600px;
+  height: 170px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px black;
+
+  
+}
+
+#difficulte1{
+  background-color: green;
+  position: relative;
+  width: 110px;
+  height:30px ;
+  margin:5px;
+  border-radius: 3px;
+  border:none;
+  box-shadow: 3px 5px 5px;
+  
+}
+
+#difficulte2{
+  background-color: yellow;
+  position: relative;
+  width: 110px;
+  height: 30px ;
+  margin:5px;
+  border-radius: 3px;
+  border:none;
+  box-shadow: 3px 5px 5px;
+}
+
+#difficulte3{
+  background-color: red;
+  position: relative;
+  width: 110px;
+  height: 30px ;
+  margin:5px;
+  border-radius: 3px;
+  border:none;
+  box-shadow: 3px 5px 5px;
+}
+
+#startButton{
+  width: 120px;
+  height: 80px;
+  margin:5px;
+  border-radius: 3px;
+  border:none;
+  box-shadow: 3px 5px 5px;
+  
+}
+
+#start-container.hidden{
+  display:none;
+}
+footer{
+    
+  background-color: rgb(6, 49, 96);
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  justify-content: right;
+  border-top: 5px solid orange;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#contact{
+  width: 250px;
+  height:30px;
+  color: rgb(255, 255, 255);
+
+  position: relative;
+  right: 20px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  border-bottom: 5px solid orange ;
+}

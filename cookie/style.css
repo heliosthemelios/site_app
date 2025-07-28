@@ -1,0 +1,160 @@
+
+
+body {
+    
+    font-family: Lato, sans-serif;
+    background: rgb(6, 14, 36);
+    width:100%;
+    padding: clamp(20px, 5vw, 50px) 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+header{   
+    
+    background-image: url('../../assets/baniere.png');
+    background-color: orange;
+    background-size: cover; /* Assure que l'image couvre toute la section */
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width:1000px;
+    display: flex;
+    border-bottom: 3px solid rgb(240, 142, 14);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+  }
+  section{
+    background-color: rgb(8, 8, 105);
+    margin-bottom: 60px;
+    border-bottom: 5px solid orange;
+    border-radius:0 0 25px 25px;
+    padding-top: 60px;
+  }
+
+.titre{
+    font-size: 30px; 
+    margin-bottom: 20px;
+    color:orange;
+    text-align: center;
+}
+form{
+    display: flex;
+    
+    width:1000px;
+   display: block;
+   
+    
+    
+    
+
+}
+label{
+    color:orange;
+    text-align: left;
+}
+input{
+    color:rgba(0, 0, 0, 0.588);
+    font-size: 25px;
+
+    width:450px;
+    height: 30px;
+    margin-bottom: 10px ;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.256);
+    border:none;
+
+    
+}
+input:hover{
+    border: 1px solid rgba(0, 0, 0, 0.24)
+}
+button{
+    color: white;
+    background-color: orange;
+    width:75px;
+    height:30px;
+    margin: 10px;
+    border-radius: 5px;
+    
+   
+}
+button:hover{
+    color:black;
+    background-color: greenyellow;
+}
+.buttons{
+   
+   max-width: 1000px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   
+    
+}
+
+
+.display-cookie {
+    width:450px;
+    display: flex; /* Utilise Flexbox pour aligner les éléments enfants horizontalement */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+    gap: 10px;
+    align-items: center;
+    justify-content: center; /* Espacement entre les paragraphes */
+    padding-bottom: 10px;
+    padding-left: 270px;
+    
+}
+
+.display-cookie p {
+    background-color: rgb(242, 241, 241);
+    margin: 0px;
+    
+    width: 220px;
+    height: 75px;
+    text-align: left; /* Centre le texte horizontalement */
+    display: block; /* Utilise Flexbox */
+    align-items: center; /* Centre le texte verticalement */
+    justify-content: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Centre le texte horizontalement (en plus de text-align) */
+}
+span{
+    font-weight: 600;
+}
+.delete-cookie{
+    text-align: right;
+    margin: 0px;
+
+}
+
+
+footer{
+    
+    background-color: rgb(6, 49, 96);
+    display: flex;
+    bottom: 0;
+    width: 1000px;
+    justify-content: right;
+    border-top: 5px solid orange;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#contact{
+    width: 250px;
+    height:30px;
+    color: rgb(255, 255, 255);
+
+    position: relative;
+    right: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    border-bottom: 5px solid orange ;
+}

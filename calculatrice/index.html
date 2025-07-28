@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculatrice Basique</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Petite calculatrice en javascript" />
+    <meta name="keywords" content="calculatrice, facile, programmation, javascript" />
+</head>
+<body>
+    <header></header>
+    <section>
+        <div>
+            <h2>Casio</h2>
+            <input type="text" id="result" value="0" readonly>
+            <br>
+            <button onclick="clearResult()" id="c" style="background-color: orange">C</button>
+            <br>
+            <button onclick="appendToResult('1')">1</button>
+            <button onclick="appendToResult('2')">2</button>
+            <button onclick="appendToResult('3')">3</button>
+            <button onclick="appendToResult('+')" id="plus">+</button>
+            <br>
+            <button onclick="appendToResult('4')">4</button>
+            <button onclick="appendToResult('5')">5</button>
+            <button onclick="appendToResult('6')">6</button>
+            <button onclick="appendToResult('-')">-</button>
+            <br>
+            <button onclick="appendToResult('7')">7</button>
+            <button onclick="appendToResult('8')">8</button>
+            <button onclick="appendToResult('9')">9</button>
+            <button onclick="appendToResult('*')">*</button>
+            <br>
+            <button onclick="appendToResult('0')">0</button>
+            <button onclick="appendToResult('.')">.</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendToResult('/')">/</button>
+        </div>
+    </section>
+    <footer>
+        <p id="contact">contact: <a href="mailto:admin@currently-offline.game">Me contacter</a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.0/math.min.js"></script>
+    <script src="calculatrice.js"></script> </script>
+
+</body>
+</html>

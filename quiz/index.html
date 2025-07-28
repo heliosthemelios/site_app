@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quiz sur l'art en général" />
+    <meta name="keywords" content="quiz, art, programmation, javascript" />
+    <title>Quizz sur l'art</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header></header>
+    <section class="section-1">
+      <h2><strong>Quiz</strong> de culture general sur l'art<input type="checkbox" class="checkbox-dimension" checked/></h2>
+      <form class="form-1">
+        <label for="premier-formulaire">1. Qui a peint la "Joconde" ?</label><br>
+        <input type='radio' name="premier-formulaire" value="Michel-Ange" checked>Michel-Ange</input><br>
+        <input type='radio' name="premier-formulaire" value="Léonard de Vinci">Léonard de Vinci</input><br>
+        <input type='radio' name="premier-formulaire" value="Pablo Picasso">Pablo Picasso</input><br>
+      </form>
+      <form class="form-2">
+        <label for="deuxieme-formulaire">2. Quel mouvement artistique est associé à Claude Monet ?</label><br>
+        <input type='radio' name="deuxieme-formulaire" value="Cubisme" checked>Cubisme</input><br>
+        <input type='radio' name="deuxieme-formulaire" value="Surréalisme">Surréalisme</input><br>
+        <input type='radio' name="deuxieme-formulaire" value="Impressionnisme">Impressionnisme</input><br>
+      </form>
+      <form class="form-3">
+        <label for="troixieme-formulaire">3. Dans quelle ville se trouve la chapelle Sixtine, célèbre pour ses fresques ?</label><br>
+        <input type='radio' name="troisieme-formulaire" value="Florence" checked>Florence</input><br>
+        <input type='radio' name="troisieme-formulaire" value="Rome">Rome</input><br>
+        <input type='radio' name="troisieme-formulaire" value="Paris">Paris</input><br>
+      </form>
+      <form class="form-4">
+        <label for="quatrieme-formulaire">4. Quel artiste est connu pour ses tableaux de tournesols ?</label><br>
+        <input type='radio' name="quatrieme-formulaire" value="Vincent van Gogh" checked>Vincent van Gogh</input><br>
+        <input type='radio' name="quatrieme-formulaire" value="Paul Cézanne">Paul Cézanne</input><br>
+        <input type='radio' name="quatrieme-formulaire" value="Georges Seurat">Georges Seurat</input><br>
+      </form>
+      <form class="form-5">
+        <label for="cinquieme-formulaire">5. Quel peintre est considéré comme l'un des précurseurs de l'abstraction ?</label><br>
+        <input type='radio' name="cinquieme-formulaire" value="Wassily Kandinsky" checked>Wassily Kandinsky</input><br>
+        <input type='radio' name="cinquieme-formulaire" value="Salvador Dalí">Salvador Dalí</input><br>
+        <input type='radio' name="cinquieme-formulaire" value="Henri Matisse">Henri Matisse</input><br>
+      </form>
+      <button type="button" onclick="valider()">VALIDER ✔️</button>
+      <div class="directive">Cliquez sur <strong>valider</strong> pour voir les <strong>resultats</strong></div>
+    </section>
+    <footer>
+      <p id="contact">contact: <a href="mailto:admin@currently-offline.game">Me contacter</a></p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

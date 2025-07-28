@@ -1,0 +1,118 @@
+body{
+    background: rgb(6, 14, 36);
+    
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header{   
+    
+    background-image: url('../assets/baniere.png');
+    background-color: orange;
+    background-size: cover; /* Assure que l'image couvre toute la section */
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    
+    border-bottom: 3px solid rgb(240, 142, 14);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    
+}
+#toute-section{
+    background: rgb(8, 8, 105);
+    width:1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    border-bottom: 5px solid orange;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#section-1{
+    width: 450px;
+    height:70px;
+    background: rgb(8, 8, 105);
+}
+#section-2{
+    background: rgb(8, 8, 105);
+    width: 450px;
+    height: 70px;
+    display:flex;
+    
+    text-align: center;
+    
+
+}
+#section-3{
+    background: rgb(8, 8, 105);
+    width: 450px;
+
+    text-align: center;
+
+}
+label{
+    color: orange;
+    margin: 20px;
+}
+button{
+    background-color: rgb(255, 187, 0);
+    height: 30px;
+    width: 175px;
+    border: none;
+    border-radius: 3px;
+}
+input{
+    color: rgba(0, 0, 0, 0.545);
+    border-radius: 3px;
+    height: 28px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.218) ;
+}
+p{  
+    color: orange;
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+#resultat{
+    color:orange;
+    font-size: 24px;
+    
+}
+#attente{
+
+    color:orange;
+    margin-bottom: 10px;
+}
+footer{
+    
+    background-color: rgb(6, 49, 96);
+    display: flex;
+    bottom: 0;
+    width: 1000px;
+    justify-content: right;
+    border-top: 5px solid orange;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#contact{
+    width: 250px;
+    height:30px;
+    color: rgb(255, 255, 255);
+
+    position: relative;
+    right: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    border-bottom: 5px solid orange ;
+}

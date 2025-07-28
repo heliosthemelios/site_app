@@ -1,0 +1,121 @@
+body {
+  background: rgb(6, 14, 36);
+  height: 1600px;
+  font-family: Open sans, sans-serif;
+  
+  padding: clamp(20px, 5vw, 50px) 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  justify-content: center;
+  
+  
+}
+header{   
+    
+  background-image: url("../assets/baniere.png");
+  background-color: orange;
+  background-size: cover; /* Assure que l'image couvre toute la section */
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  border-bottom: 3px solid rgb(240, 142, 14);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  
+}
+.section-1{
+    
+  background: rgb(8, 8, 105);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  border-bottom: 5px solid orange;
+  border-radius:0 0 25px 25px;
+ 
+}
+form{
+  width: 580px;
+  height: 150px;
+  align-items: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  
+  
+  
+  background-color: white;
+  margin:10px;
+}
+
+p{
+  font-size: 25px;
+  text-align: center;
+  
+}
+button{
+  width: 110px;
+  height: 35px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  
+}
+.directive{
+  background-color: white;
+  width: 580px;
+  height:40px;
+  
+  text-align: center;
+  
+  margin-top: 10px;
+  padding-top: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+label {
+  margin-bottom: 10px; /* Ajustez la valeur en fonction de vos besoins */
+  display: block; /* Assure que chaque label prend une nouvelle ligne */
+}
+.checkbox-dimension {
+  width: 30px;
+  height: 30px;
+  border: 5px solid black;
+}
+footer{
+    
+  background-color: rgb(6, 49, 96);
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  justify-content: right;
+  border-top: 5px solid orange;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#contact{
+  width: 250px;
+  height:30px;
+  color: rgb(255, 255, 255);
+
+  position: relative;
+  right: 20px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  border-bottom: 5px solid orange ;
+}
+h2{
+  color: white;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="calculateur d'imc de poids sante" />
+    <meta name="keywords" content="application, imc, poids, taille, sante" />
+    <title>Calcul IMC</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header></header>
+    <section id="toute-section">
+      <section id="section-1"> 
+        <p>Calcul <strong>d'IMC</strong></p>
+      </section>
+      <section id="section-2"> 
+        <div id ="label-1"><label for="taille">Votre taille en m, Ex: 1.80</label><input type="text" id="taille" value="Votre taille en metre"></div>
+          <div id="label-2"><label for="poids">Votre Poids en Kg, Ex: 80</label><input type="text" id="poids" value="Votre poids en kg"></div><br>
+      </section>
+      <section id= "section-3">
+        <button onclick="calculerImc()" id="bouton" ><strong>Calculer un IMC </strong></button> 
+        <div id="resultat">0</div>
+        <div id="attente"> En attente de resultat ...</div>
+      </section>
+  </section>
+  <footer>
+    <p id="contact">contact: <a href="mailto:admin@currently-offline.game">Me contacter</a></p>
+  </footer>
+  <script src="app.js"></script>
+  </body>
+</html>
