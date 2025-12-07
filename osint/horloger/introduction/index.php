@@ -34,7 +34,7 @@
         <li>Trouver sa <b>dernière position connue</b></li>
     </ul>
 
-    <a class="start-btn" href="defiosint/index.html">Commencer l’enquête</a>
+    <a class="start-btn" href="jeu/index.html">Commencer l’enquête</a>
 
     <?php
         $resultMessage = '';
